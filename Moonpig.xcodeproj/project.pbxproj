@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		163ED3A32B571C42003D91E6 /* MoonpigApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3A22B571C42003D91E6 /* MoonpigApp.swift */; };
-		163ED3A52B571C42003D91E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3A42B571C42003D91E6 /* ContentView.swift */; };
+		163ED3A52B571C42003D91E6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3A42B571C42003D91E6 /* HomeView.swift */; };
 		163ED3A72B571C44003D91E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163ED3A62B571C44003D91E6 /* Assets.xcassets */; };
 		163ED3AA2B571C44003D91E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163ED3A92B571C44003D91E6 /* Preview Assets.xcassets */; };
 		163ED3B42B571C44003D91E6 /* MoonpigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3B32B571C44003D91E6 /* MoonpigTests.swift */; };
 		163ED3BE2B571C44003D91E6 /* MoonpigUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3BD2B571C44003D91E6 /* MoonpigUITests.swift */; };
 		163ED3C02B571C44003D91E6 /* MoonpigUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3BF2B571C44003D91E6 /* MoonpigUITestsLaunchTests.swift */; };
+		163ED3CE2B571C6A003D91E6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3CD2B571C6A003D91E6 /* AppCoordinator.swift */; };
+		163ED3D12B571C95003D91E6 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 163ED3D02B571C95003D91E6 /* Swinject */; };
+		163ED3D72B572601003D91E6 /* HomeProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3D62B572601003D91E6 /* HomeProductList.swift */; };
+		163ED3DD2B5728FD003D91E6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3DC2B5728FD003D91E6 /* Product.swift */; };
+		163ED3DF2B572918003D91E6 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3DE2B572918003D91E6 /* ProductCategory.swift */; };
+		163ED3E12B5729CE003D91E6 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3E02B5729CE003D91E6 /* Price.swift */; };
+		163ED3E32B5729F4003D91E6 /* ProductImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3E22B5729F4003D91E6 /* ProductImage.swift */; };
+		163ED3E52B572B0A003D91E6 /* ImageLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3E42B572B0A003D91E6 /* ImageLink.swift */; };
+		163ED3E72B572B4F003D91E6 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3E62B572B4F003D91E6 /* Reviews.swift */; };
+		163ED3E92B572C76003D91E6 /* CardLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3E82B572C76003D91E6 /* CardLoader.swift */; };
+		163ED3EC2B573253003D91E6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3EB2B573253003D91E6 /* HomeViewModel.swift */; };
+		163ED3EE2B573380003D91E6 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3ED2B573380003D91E6 /* StateModel.swift */; };
+		163ED3F02B5733BE003D91E6 /* ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3EF2B5733BE003D91E6 /* ClientError.swift */; };
+		163ED3F22B573464003D91E6 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ED3F12B573464003D91E6 /* ProductViewModel.swift */; };
+		163ED3F52B57362B003D91E6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 163ED3F42B57362B003D91E6 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +51,7 @@
 /* Begin PBXFileReference section */
 		163ED39F2B571C42003D91E6 /* Moonpig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonpig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		163ED3A22B571C42003D91E6 /* MoonpigApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonpigApp.swift; sourceTree = "<group>"; };
-		163ED3A42B571C42003D91E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		163ED3A42B571C42003D91E6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		163ED3A62B571C44003D91E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163ED3A92B571C44003D91E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		163ED3AF2B571C44003D91E6 /* MoonpigTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonpigTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +59,19 @@
 		163ED3B92B571C44003D91E6 /* MoonpigUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonpigUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		163ED3BD2B571C44003D91E6 /* MoonpigUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonpigUITests.swift; sourceTree = "<group>"; };
 		163ED3BF2B571C44003D91E6 /* MoonpigUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonpigUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		163ED3CD2B571C6A003D91E6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		163ED3D62B572601003D91E6 /* HomeProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProductList.swift; sourceTree = "<group>"; };
+		163ED3DC2B5728FD003D91E6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		163ED3DE2B572918003D91E6 /* ProductCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
+		163ED3E02B5729CE003D91E6 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		163ED3E22B5729F4003D91E6 /* ProductImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImage.swift; sourceTree = "<group>"; };
+		163ED3E42B572B0A003D91E6 /* ImageLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLink.swift; sourceTree = "<group>"; };
+		163ED3E62B572B4F003D91E6 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		163ED3E82B572C76003D91E6 /* CardLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLoader.swift; sourceTree = "<group>"; };
+		163ED3EB2B573253003D91E6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		163ED3ED2B573380003D91E6 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
+		163ED3EF2B5733BE003D91E6 /* ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientError.swift; sourceTree = "<group>"; };
+		163ED3F12B573464003D91E6 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163ED3F52B57362B003D91E6 /* SDWebImageSwiftUI in Frameworks */,
+				163ED3D12B571C95003D91E6 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,10 +124,13 @@
 		163ED3A12B571C42003D91E6 /* Moonpig */ = {
 			isa = PBXGroup;
 			children = (
+				163ED3D52B5725E4003D91E6 /* Models */,
+				163ED3D22B571CFE003D91E6 /* Screens */,
+				163ED3CC2B571C59003D91E6 /* App */,
 				163ED3A22B571C42003D91E6 /* MoonpigApp.swift */,
-				163ED3A42B571C42003D91E6 /* ContentView.swift */,
 				163ED3A62B571C44003D91E6 /* Assets.xcassets */,
 				163ED3A82B571C44003D91E6 /* Preview Content */,
+				163ED3E82B572C76003D91E6 /* CardLoader.swift */,
 			);
 			path = Moonpig;
 			sourceTree = "<group>";
@@ -127,6 +160,48 @@
 			path = MoonpigUITests;
 			sourceTree = "<group>";
 		};
+		163ED3CC2B571C59003D91E6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				163ED3CD2B571C6A003D91E6 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		163ED3D22B571CFE003D91E6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				163ED3EA2B573237003D91E6 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		163ED3D52B5725E4003D91E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				163ED3D62B572601003D91E6 /* HomeProductList.swift */,
+				163ED3E42B572B0A003D91E6 /* ImageLink.swift */,
+				163ED3E02B5729CE003D91E6 /* Price.swift */,
+				163ED3DC2B5728FD003D91E6 /* Product.swift */,
+				163ED3DE2B572918003D91E6 /* ProductCategory.swift */,
+				163ED3E22B5729F4003D91E6 /* ProductImage.swift */,
+				163ED3E62B572B4F003D91E6 /* Reviews.swift */,
+				163ED3ED2B573380003D91E6 /* StateModel.swift */,
+				163ED3EF2B5733BE003D91E6 /* ClientError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		163ED3EA2B573237003D91E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				163ED3A42B571C42003D91E6 /* HomeView.swift */,
+				163ED3EB2B573253003D91E6 /* HomeViewModel.swift */,
+				163ED3F12B573464003D91E6 /* ProductViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +212,17 @@
 				163ED39B2B571C42003D91E6 /* Sources */,
 				163ED39C2B571C42003D91E6 /* Frameworks */,
 				163ED39D2B571C42003D91E6 /* Resources */,
+				163ED3D42B571DED003D91E6 /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Moonpig;
+			packageProductDependencies = (
+				163ED3D02B571C95003D91E6 /* Swinject */,
+				163ED3F42B57362B003D91E6 /* SDWebImageSwiftUI */,
+			);
 			productName = Moonpig;
 			productReference = 163ED39F2B571C42003D91E6 /* Moonpig.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +295,10 @@
 				Base,
 			);
 			mainGroup = 163ED3962B571C42003D91E6;
+			packageReferences = (
+				163ED3CF2B571C95003D91E6 /* XCRemoteSwiftPackageReference "Swinject" */,
+				163ED3F32B57362B003D91E6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 163ED3A02B571C42003D91E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,13 +336,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		163ED3D42B571DED003D91E6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		163ED39B2B571C42003D91E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163ED3A52B571C42003D91E6 /* ContentView.swift in Sources */,
+				163ED3CE2B571C6A003D91E6 /* AppCoordinator.swift in Sources */,
+				163ED3E72B572B4F003D91E6 /* Reviews.swift in Sources */,
+				163ED3E32B5729F4003D91E6 /* ProductImage.swift in Sources */,
+				163ED3E12B5729CE003D91E6 /* Price.swift in Sources */,
+				163ED3DF2B572918003D91E6 /* ProductCategory.swift in Sources */,
+				163ED3A52B571C42003D91E6 /* HomeView.swift in Sources */,
+				163ED3EE2B573380003D91E6 /* StateModel.swift in Sources */,
+				163ED3DD2B5728FD003D91E6 /* Product.swift in Sources */,
+				163ED3EC2B573253003D91E6 /* HomeViewModel.swift in Sources */,
+				163ED3E92B572C76003D91E6 /* CardLoader.swift in Sources */,
+				163ED3E52B572B0A003D91E6 /* ImageLink.swift in Sources */,
+				163ED3D72B572601003D91E6 /* HomeProductList.swift in Sources */,
 				163ED3A32B571C42003D91E6 /* MoonpigApp.swift in Sources */,
+				163ED3F02B5733BE003D91E6 /* ClientError.swift in Sources */,
+				163ED3F22B573464003D91E6 /* ProductViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +541,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Moonpig/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -451,6 +570,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Moonpig/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -582,6 +702,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		163ED3CF2B571C95003D91E6 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		163ED3F32B57362B003D91E6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		163ED3D02B571C95003D91E6 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 163ED3CF2B571C95003D91E6 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		163ED3F42B57362B003D91E6 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 163ED3F32B57362B003D91E6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 163ED3972B571C42003D91E6 /* Project object */;
 }
