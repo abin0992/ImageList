@@ -231,10 +231,10 @@
 		163ED3EA2B573237003D91E6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				163ED4212B589A9D003D91E6 /* Model */,
 				163ED3FF2B58706B003D91E6 /* UseCase */,
 				163ED3A42B571C42003D91E6 /* HomeView.swift */,
 				163ED3EB2B573253003D91E6 /* HomeViewModel.swift */,
-				163ED3F12B573464003D91E6 /* ProductViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -322,6 +322,14 @@
 				163ED4132B58888F003D91E6 /* ProductServiceTests.swift */,
 			);
 			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		163ED4212B589A9D003D91E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				163ED3F12B573464003D91E6 /* ProductViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

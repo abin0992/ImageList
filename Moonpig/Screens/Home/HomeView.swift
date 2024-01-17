@@ -25,7 +25,7 @@ struct HomeView: View {
         ZStack {
             switch viewModel.state {
             case .loading:
-                // Use better loading view if needed
+                // TODO: Use better loading view
                 Text("Loading...")
             case .data(let products):
                 dataContentView(products: products)
