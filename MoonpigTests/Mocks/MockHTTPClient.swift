@@ -12,7 +12,7 @@ import Foundation
 class MockHTTPClient: HTTPClientProtocol {
     var requestHandler: ((URL) -> AnyPublisher<Data, Error>)?
 
-    func performRequest<T>(url: URL) -> AnyPublisher<T, Error> where T : Decodable, T : Encodable {
+    func performRequest<T>(url: URL) -> AnyPublisher<T, Error> where T: Decodable, T: Encodable {
         guard let handler = requestHandler else {
             return Fail(error: ClientError.invalidURL).eraseToAnyPublisher()
         }
@@ -26,5 +26,4 @@ class MockHTTPClient: HTTPClientProtocol {
             .eraseToAnyPublisher()
     }
 }
-
 
