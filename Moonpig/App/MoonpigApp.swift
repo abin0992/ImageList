@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import Swinject
 
 @main
 struct MoonpigApp: App {
+    init() {
+        DependencyManager.registerServices()
+    }
+
     var body: some Scene {
         WindowGroup {
-            HomeView(viewModel: HomeViewModel())
+            ContentView()
         }
     }
 }

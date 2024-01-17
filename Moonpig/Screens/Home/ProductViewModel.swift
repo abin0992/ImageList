@@ -8,7 +8,6 @@
 import Foundation
 
 struct ProductViewModel: Equatable, Identifiable {
-    let id: ObjectIdentifier
+    let id: Int
     let imageURL: String
-    
 }

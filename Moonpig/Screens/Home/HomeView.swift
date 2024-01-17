@@ -16,59 +16,63 @@ struct HomeView: View {
         self.viewModel = viewModel
     }
 
-
     private let columns: [GridItem] = Array(
         repeating: .init(.flexible()),
         count: 3
     )
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                switch viewModel.state {
-                case .loading:
-                    // add view
-                    Text("Loading")
-                case .data(let products):
-                    dataContentView(products: products)
-                case .error:
-                    // add view
-                    Text("Error")
-                default:
-                    VStack {}
-                }
+        ZStack {
+            switch viewModel.state {
+            case .loading:
+                // Use better loading view if needed
+                Text("Loading...")
+            case .data(let products):
+                dataContentView(products: products)
+            case .error:
+                // TODO: add custom error types and pass error message according to error
+                ErrorPopupView(
+                    title: "Error Occurred",
+                    subtitle: "Something went wrong. Please try again.",
+                    retryAction: {
+                        print("Retry tapped")
+                    }
+                )
+            default:
+                VStack {}
             }
         }
-        .navigationTitle("")
+        .navigationTitle("Moonpig")
         .navigationBarBackButtonHidden(true)
     }
 }
 
 private extension HomeView {
     func dataContentView(products: [ProductViewModel]) -> some View {
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 16) {
-                    ForEach(products) { product in
-                        WebImage(
-                            url: URL(
-                                string: product.imageURL
-                            )
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 16) {
+                ForEach(products) { product in
+                    WebImage(
+                        url: URL(
+                            string: product.imageURL
                         )
-                        .resizable()
-                        .indicator(.activity) // Activity indicator while loading
-                        .transition(.fade(duration: 0.5)) // Fade Transition with duration
-                        .scaledToFit()
-                        .cornerRadius(10)
-                    }
+                    )
+                    .resizable()
+                    .indicator(.activity)
+                    .transition(.fade(duration: 0.5))
+                    .scaledToFit()
+                    .cornerRadius(10)
                 }
-                .padding(.horizontal, 16)
             }
-            .navigationTitle("Moonpig")
+            .padding(.horizontal, 16)
         }
     }
 }
 
 #Preview {
-    HomeView(viewModel: HomeViewModel())
+    HomeView(
+        viewModel: HomeViewModel(
+            fetchHomeProductListUseCase: MockHomeProductListUseCase()
+        )
+    )
 }

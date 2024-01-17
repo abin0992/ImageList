@@ -8,16 +8,16 @@
 import Foundation
 
 struct StateModel<T: Equatable> {
-    
+
     enum State: Equatable {
-        
+
         case initial
         case loading
         case updating
         case error(ClientError)
         case updatingError(ClientError)
         case data(T)
-        
+
         func map<W: Equatable>(_ transform: (T) -> W) -> StateModel<W>.State {
             switch self {
             case .initial:
@@ -35,9 +35,9 @@ struct StateModel<T: Equatable> {
             }
         }
     }
-    
+
     var data: T?
-    
+
     var state: State = .initial {
         didSet {
             if case .data(let data) = state {
@@ -45,7 +45,7 @@ struct StateModel<T: Equatable> {
             }
         }
     }
-    
+
     // Initializer to allow creating an instance with a specific state
     init(state: State = .initial) {
         self.state = state
