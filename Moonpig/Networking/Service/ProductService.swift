@@ -8,24 +8,23 @@
 import Combine
 import Foundation
 
+protocol ProductFetchable {
+    func fetchProducts() -> AnyPublisher<HomeProductList, Error>
+}
+
 class ProductService: ProductFetchable {
 
-    private let httpClient: HTTPClient
+    private let httpClient: HTTPClientProtocol
 
-    init(httpClient: HTTPClient) {
+    init(httpClient: HTTPClientProtocol) {
         self.httpClient = httpClient
     }
 
-    func fetchData() -> AnyPublisher<HomeProductList, Error> {
-        // TODO: Better approach for generating URL without force unwrapping, return custom error for invalid URL
+    func fetchProducts() -> AnyPublisher<HomeProductList, Error> {
         guard let url = URL(string: "https://moonpig.github.io/tech-test-frontend/search.json") else {
             return Fail<HomeProductList, Error>(error: ClientError.invalidURL)
                 .eraseToAnyPublisher()
         }
         return httpClient.performRequest(url: url)
     }
-}
-
-protocol ProductFetchable {
-    func fetchData() -> AnyPublisher<HomeProductList, Error>
 }

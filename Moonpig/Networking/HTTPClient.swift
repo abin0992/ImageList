@@ -8,7 +8,11 @@
 import Combine
 import Foundation
 
-class HTTPClient {
+protocol HTTPClientProtocol {
+    func performRequest<T: Codable>(url: URL) -> AnyPublisher<T, Error>
+}
+
+class HTTPClient: HTTPClientProtocol {
 
     private let session: URLSession
 

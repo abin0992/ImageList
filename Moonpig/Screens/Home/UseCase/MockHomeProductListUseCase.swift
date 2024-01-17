@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-class MockHomeProductListUseCase: HomeProductListFetchable {
+class PreviewHomeProductListUseCase: HomeProductListFetchable {
     func execute() -> AnyPublisher<DomainResult<[ProductViewModel]>, Never> {
         // Create some sample data to return
         let sampleProducts = [

@@ -72,7 +72,7 @@ private extension HomeView {
 #Preview {
     HomeView(
         viewModel: HomeViewModel(
-            fetchHomeProductListUseCase: MockHomeProductListUseCase()
+            fetchHomeProductListUseCase: PreviewHomeProductListUseCase()
         )
     )
 }

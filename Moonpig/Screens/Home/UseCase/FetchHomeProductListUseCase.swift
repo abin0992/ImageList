@@ -17,7 +17,7 @@ class FetchHomeProductListUseCase: HomeProductListFetchable {
     }
 
     func execute() -> AnyPublisher<DomainResult<[ProductViewModel]>, Never> {
-        productService.fetchData()
+        productService.fetchProducts()
             .map { productList in
                 productList.products.map { product in
                     ProductViewModel(

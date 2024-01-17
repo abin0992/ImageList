@@ -13,7 +13,7 @@ class HomeViewModel: ObservableObject {
     @Published var state = StateModel<[ProductViewModel]>.State.loading
 
     let didTapRetry = PassthroughSubject<Void, Never>()
-    
+
     private lazy var fetchProductListResult = makeInitialProductFetchResult().share()
 
     private let fetchHomeProductListUseCase: HomeProductListFetchable

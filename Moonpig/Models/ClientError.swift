@@ -11,4 +11,5 @@ enum ClientError: Error, Equatable {
     // TODO: Add other error types
     case generic
     case invalidURL
+    case networkError
 }
