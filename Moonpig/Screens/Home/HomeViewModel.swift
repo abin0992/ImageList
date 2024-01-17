@@ -12,6 +12,8 @@ class HomeViewModel: ObservableObject {
 
     @Published var state = StateModel<[ProductViewModel]>.State.loading
 
+    let didTapRetry = PassthroughSubject<Void, Never>()
+    
     private lazy var fetchProductListResult = makeInitialProductFetchResult().share()
 
     private let fetchHomeProductListUseCase: HomeProductListFetchable
@@ -42,6 +44,13 @@ private extension HomeViewModel {
     }
 
     func makeInitialProductFetchResult() -> AnyPublisher<DomainResult<[ProductViewModel]>, Never> {
-        fetchHomeProductListUseCase.execute()
+        Publishers.Merge(
+            Just<Void>(()),
+            didTapRetry
+        )
+        .flatMap { [fetchHomeProductListUseCase] _ -> AnyPublisher<DomainResult<[ProductViewModel]>, Never> in
+            fetchHomeProductListUseCase.execute()
+        }
+        .eraseToAnyPublisher()
     }
 }

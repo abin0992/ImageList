@@ -139,10 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				163ED3CC2B571C59003D91E6 /* App */,
-				163ED3A62B571C44003D91E6 /* Assets.xcassets */,
 				163ED3D52B5725E4003D91E6 /* Models */,
 				163ED3F72B586A24003D91E6 /* Networking */,
 				163ED3A82B571C44003D91E6 /* Preview Content */,
+				163ED40B2B588242003D91E6 /* Resources */,
 				163ED3D22B571CFE003D91E6 /* Screens */,
 				163ED4022B587385003D91E6 /* Utilities */,
 			);
@@ -253,6 +253,14 @@
 				163ED4092B588081003D91E6 /* ErrorPopupView.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		163ED40B2B588242003D91E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				163ED3A62B571C44003D91E6 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

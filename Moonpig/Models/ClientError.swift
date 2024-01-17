@@ -8,6 +8,7 @@
 import Foundation
 
 enum ClientError: Error, Equatable {
-    // TODO: Add all error types
+    // TODO: Add other error types
     case generic
+    case invalidURL
 }

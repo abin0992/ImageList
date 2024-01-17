@@ -35,7 +35,7 @@ struct HomeView: View {
                     title: "Error Occurred",
                     subtitle: "Something went wrong. Please try again.",
                     retryAction: {
-                        print("Retry tapped")
+                        viewModel.didTapRetry.send(())
                     }
                 )
             default:

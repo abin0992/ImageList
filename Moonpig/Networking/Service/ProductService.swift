@@ -18,7 +18,10 @@ class ProductService: ProductFetchable {
 
     func fetchData() -> AnyPublisher<HomeProductList, Error> {
         // TODO: Better approach for generating URL without force unwrapping, return custom error for invalid URL
-        let url = URL(string: "https://moonpig.github.io/tech-test-frontend/search.json")!
+        guard let url = URL(string: "https://moonpig.github.io/tech-test-frontend/search.json") else {
+            return Fail<HomeProductList, Error>(error: ClientError.invalidURL)
+                .eraseToAnyPublisher()
+        }
         return httpClient.performRequest(url: url)
     }
 }
